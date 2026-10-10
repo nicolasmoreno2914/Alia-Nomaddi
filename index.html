@@ -555,6 +555,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .acc .ans{padding:0 48px 24px 0;color:var(--ink-2);max-width:62ch}
 @media (prefers-reduced-motion:no-preference){ .acc details[open] .ans{animation:rise .3s var(--ease) both} }
 
+/* ───────── Clientes ───────── */
+.clients{padding-block:clamp(36px,5vw,56px);border-block:1px solid var(--line);background:#fff}
+.clients-inner{display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
+.clients-title{margin:0;font-size:var(--fs-sm);font-weight:500;color:var(--ink-3)}
+.clients-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(32px,6vw,72px)}
+.clients-list img{display:block;height:44px;width:auto;max-width:100%}
+.clients-list .logo-inandina img{height:34px}
+.clients-list .logo-nomaddi img{height:52px}
 /* ───────── CTA final + formulario ───────── */
 .final{background:var(--noche);color:#fff;position:relative;overflow:hidden}
 .final::before{content:"";position:absolute;left:-10%;top:-40%;width:70%;height:140%;background:radial-gradient(closest-side, rgba(37,152,161,.16), transparent);pointer-events:none}
@@ -1068,6 +1076,18 @@ select.input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xml
       </div>
       <div class="hero-caption"><span class="illus-tag">Demostración ilustrativa</span><span>Curso, institución y conversación de ejemplo</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ═════════ Clientes ═════════ -->
+<section class="clients" id="clientes" aria-labelledby="clients-title">
+  <div class="wrap clients-inner">
+    <p class="clients-title" id="clients-title">Instituciones que ya confían en ALIA</p>
+    <ul class="clients-list">
+      <li class="logo-cursia"><img src="assets/clientes/cursia.png" alt="Cursia" width="354" height="120" loading="lazy"></li>
+      <li class="logo-nomaddi"><img src="assets/clientes/nomaddi.png" alt="Nomaddi" width="250" height="120" loading="lazy"></li>
+      <li class="logo-inandina"><img src="assets/clientes/inandina.png" alt="Inandina" width="400" height="83" loading="lazy"></li>
+    </ul>
   </div>
 </section>
 
