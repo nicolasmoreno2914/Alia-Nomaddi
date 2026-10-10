@@ -23,4 +23,10 @@ El archivo [`CNAME`](CNAME) apunta el sitio al dominio `alia.nomaddi.com`. En el
 - Subir la imagen para redes sociales en `og/alia-og.png` (1200×630).
 - Completar los enlaces de política de privacidad y tratamiento de datos.
 - Mover el bloque SEO (meta, Open Graph, JSON-LD) al `<head>`.
-- Configurar `CONFIG.lead.endpoint` (CRM o webhook) para que el formulario de demo envíe datos; mientras sea `null` funciona en modo demostración.
+
+## Agendamiento de demos
+
+Todos los botones "Solicitar demo" abren la página de citas de Google Calendar en una pestaña nueva:
+https://calendar.app.google/iiyDMaBumkJmyaqD7
+
+Para cambiarla, reemplaza ese enlace en `index.html` (también está en `CONFIG.scheduler`).
